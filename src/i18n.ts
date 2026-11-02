@@ -17,7 +17,7 @@ const en: Record<string, string> = {
 
   'hero.t1': 'A clear',
   'hero.t2': 'vision.',
-  'hero.lede': 'We measure land to the centimetre and model the traffic that moves across it. Geodesy, cadastre, architecture and telecommunications for Kosovo.',
+  'hero.lede': 'We measure land to the centimetre and model the traffic that moves across it. Geodesy, cadastre, architecture and traffic engineering for Kosovo.',
   'hero.hint': 'Click the map to measure a distance',
   'hero.clear': 'Clear',
   'ro.mode': 'Polar shot',

@@ -20,7 +20,7 @@ They arrive asking "can this firm measure my land / site / network correctly, on
 
 ## Product Purpose
 
-GeoInfo Sh.P.K. is a Kosovo engineering firm: surveying and geodesy first, plus real-estate/development support, architecture, telecommunications and traffic engineering (planning, modelling, simulation). The website must establish trust in precision and expertise, explain the breadth of services, and turn visitors into enquiries (phone, email, contact form).
+GeoInfo Sh.P.K. is a Kosovo engineering firm: surveying and geodesy first, plus real-estate/development support, architecture and traffic engineering (planning, modelling and simulation with PTV software). The website must establish trust in precision and expertise, explain the breadth of services, and turn visitors into enquiries (phone, email, contact form).
 
 ## Positioning
 
@@ -47,7 +47,7 @@ Bilingual: Albanian (default) + English switch.
 
 Open / undecided: address, founding year, team, project list, client list, certifications. Architecture as a distinct service line is named by the user but not described on the current site.
 
-- Wording (user, 2026-11-02): never say "transport" in a way that reads as moving goods. The traffic line is traffic engineering, modelling and simulation (PTV). Telecommunications is a named service line, not yet described on the site.
+- Wording (user, 2026-11-02): never say "transport" in a way that reads as moving goods. The traffic line is traffic engineering, modelling and simulation (PTV). Name it "inxhinieri trafiku" (traffic engineering); it is not telecommunications.
 
 ## Brand Commitments
 
