@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T18:41:31+00:00",
+  "title": "Design System: GeoInfo",
+  "extensions": {
+    "colorMeta": {
+      "globe-blue": {
+        "role": "primary",
+        "displayName": "Globe Blue",
+        "canonical": "oklch(52.3% 0.161 257.3)",
+        "tonalRamp": [
+          "#000a21",
+          "#01224f",
+          "#023c83",
+          "#105ab6",
+          "#3a7fde",
+          "#64a2fb",
+          "#a6cafd",
+          "#e5effe"
+        ]
+      },
+      "globe-blue-hover": {
+        "role": "primary",
+        "displayName": "Globe Blue Hover",
+        "canonical": "oklch(45.5% 0.141 257.6)",
+        "tonalRamp": [
+          "#000a22",
+          "#012250",
+          "#013c84",
+          "#225bab",
+          "#4680d3",
+          "#67a2f8",
+          "#a5cafe",
+          "#e5efff"
+        ]
+      },
+      "globe-blue-bright": {
+        "role": "primary",
+        "displayName": "Globe Blue Bright",
+        "canonical": "oklch(59.8% 0.160 254.3)",
+        "tonalRamp": [
+          "#000b1f",
+          "#01234a",
+          "#013f7c",
+          "#045cb0",
+          "#3081dd",
+          "#59a4fe",
+          "#a3cbfc",
+          "#e4f0ff"
+        ]
+      },
+      "globe-blue-light": {
+        "role": "primary",
+        "displayName": "Globe Blue Light",
+        "canonical": "oklch(74.5% 0.114 251.0)",
+        "tonalRamp": [
+          "#000b1d",
+          "#002547",
+          "#064173",
+          "#23609b",
+          "#4884c2",
+          "#69a6e6",
+          "#9fccfd",
+          "#e3f0ff"
+        ]
+      },
+      "globe-blue-tint": {
+        "role": "primary",
+        "displayName": "Globe Blue Tint",
+        "canonical": "oklch(91.6% 0.031 254.3)",
+        "tonalRamp": [
+          "#030b18",
+          "#1a2533",
+          "#354150",
+          "#525f6f",
+          "#748293",
+          "#95a3b5",
+          "#bac9db",
+          "#e4f0ff"
+        ]
+      },
+      "hydro-cyan": {
+        "role": "secondary",
+        "displayName": "Hydro Cyan",
+        "canonical": "oklch(60.1% 0.122 237.1)",
+        "tonalRamp": [
+          "#000d18",
+          "#00273c",
+          "#004565",
+          "#016591",
+          "#1e8ac0",
+          "#4aace4",
+          "#8ad1fd",
+          "#dff2fe"
+        ]
+      },
+      "hydro-cyan-deep": {
+        "role": "secondary",
+        "displayName": "Hydro Cyan Deep",
+        "canonical": "oklch(51.9% 0.108 238.3)",
+        "tonalRamp": [
+          "#000d17",
+          "#02273c",
+          "#054564",
+          "#0d6490",
+          "#3689b9",
+          "#5aabdd",
+          "#8dd0fd",
+          "#dff2ff"
+        ]
+      },
+      "hydro-cyan-light": {
+        "role": "secondary",
+        "displayName": "Hydro Cyan Light",
+        "canonical": "oklch(77.1% 0.083 229.4)",
+        "tonalRamp": [
+          "#000d15",
+          "#022837",
+          "#05465e",
+          "#1e6683",
+          "#468aa8",
+          "#68accb",
+          "#8ed2f3",
+          "#dbf3ff"
+        ]
+      },
+      "hydro-tint": {
+        "role": "secondary",
+        "displayName": "Hydro Tint",
+        "canonical": "oklch(93.7% 0.023 224.9)",
+        "tonalRamp": [
+          "#020d12",
+          "#18262c",
+          "#334349",
+          "#506167",
+          "#72838b",
+          "#93a5ac",
+          "#b8cbd3",
+          "#dff2fa"
+        ]
+      },
+      "contour-bistre": {
+        "role": "secondary",
+        "displayName": "Contour Bistre",
+        "canonical": "oklch(53.4% 0.102 54.0)",
+        "tonalRamp": [
+          "#270000",
+          "#460d00",
+          "#672d00",
+          "#894b1d",
+          "#ac6b3f",
+          "#d08d60",
+          "#f8b284",
+          "#ffe4c7"
+        ]
+      },
+      "contour-bistre-light": {
+        "role": "secondary",
+        "displayName": "Contour Bistre Light",
+        "canonical": "oklch(70.1% 0.080 59.5)",
+        "tonalRamp": [
+          "#200000",
+          "#3e1700",
+          "#5e340a",
+          "#7f522c",
+          "#a1724c",
+          "#c4936c",
+          "#ebb890",
+          "#ffe5c6"
+        ]
+      },
+      "vegetation-tint": {
+        "role": "tertiary",
+        "displayName": "Vegetation Tint",
+        "canonical": "oklch(90.5% 0.055 126.7)",
+        "tonalRamp": [
+          "#060f00",
+          "#1d2908",
+          "#384524",
+          "#556441",
+          "#758460",
+          "#95a580",
+          "#bbcba5",
+          "#e5f6d0"
+        ]
+      },
+      "vegetation-ink": {
+        "role": "tertiary",
+        "displayName": "Vegetation Ink",
+        "canonical": "oklch(55.4% 0.112 134.9)",
+        "tonalRamp": [
+          "#001200",
+          "#042e00",
+          "#224c00",
+          "#406b24",
+          "#5f8c45",
+          "#80ae65",
+          "#a5d58a",
+          "#dafaca"
+        ]
+      },
+      "logo-indigo": {
+        "role": "neutral",
+        "displayName": "Logo Indigo",
+        "canonical": "oklch(29.5% 0.142 283.3)",
+        "tonalRamp": [
+          "#0a002e",
+          "#220864",
+          "#3a2e86",
+          "#554eaa",
+          "#7672d1",
+          "#9694f7",
+          "#bfc1fd",
+          "#ecedfe"
+        ]
+      },
+      "validation-red": {
+        "role": "neutral",
+        "displayName": "Validation Red",
+        "canonical": "oklch(51.6% 0.166 33.9)",
+        "tonalRamp": [
+          "#1d0100",
+          "#470900",
+          "#751a04",
+          "#a7290a",
+          "#d05236",
+          "#f77558",
+          "#feb19f",
+          "#ffe9e4"
+        ]
+      },
+      "map-paper": {
+        "role": "neutral",
+        "displayName": "Map Paper",
+        "canonical": "oklch(97.5% 0.004 121.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242422",
+          "#3f403e",
+          "#5d5e5b",
+          "#7d7e7b",
+          "#9e9f9c",
+          "#c3c4c2",
+          "#eeefec"
+        ]
+      },
+      "paper-tint": {
+        "role": "neutral",
+        "displayName": "Paper Tint",
+        "canonical": "oklch(94.9% 0.008 121.6)",
+        "tonalRamp": [
+          "#0b0c08",
+          "#232520",
+          "#3f403c",
+          "#5d5e59",
+          "#7c7e79",
+          "#9d9f9a",
+          "#c3c5bf",
+          "#edefe9"
+        ]
+      },
+      "paper-shade": {
+        "role": "neutral",
+        "displayName": "Paper Shade",
+        "canonical": "oklch(92.1% 0.010 125.7)",
+        "tonalRamp": [
+          "#0a0c08",
+          "#232520",
+          "#3e413b",
+          "#5c5f59",
+          "#7c7e78",
+          "#9da099",
+          "#c2c5be",
+          "#edf0e9"
+        ]
+      },
+      "planimetry-ink": {
+        "role": "neutral",
+        "displayName": "Planimetry Ink",
+        "canonical": "oklch(20.0% 0.007 145.3)",
+        "tonalRamp": [
+          "#090c09",
+          "#222522",
+          "#3d413d",
+          "#5b5f5b",
+          "#7b7e7a",
+          "#9ca09c",
+          "#c1c5c1",
+          "#edefed"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "canonical": "oklch(36.3% 0.015 145.3)",
+        "tonalRamp": [
+          "#070d07",
+          "#202620",
+          "#3b423b",
+          "#586058",
+          "#788078",
+          "#99a199",
+          "#bec7be",
+          "#ecf0ec"
+        ]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Ink Tertiary",
+        "canonical": "oklch(50.4% 0.016 145.3)",
+        "tonalRamp": [
+          "#070d07",
+          "#1f261f",
+          "#3b423b",
+          "#586058",
+          "#788078",
+          "#99a198",
+          "#bec7be",
+          "#ebf0eb"
+        ]
+      },
+      "negative-ground": {
+        "role": "neutral",
+        "displayName": "Negative Ground",
+        "canonical": "oklch(19.1% 0.008 145.3)",
+        "tonalRamp": [
+          "#090c09",
+          "#222522",
+          "#3d413d",
+          "#5b5f5b",
+          "#7a7e7a",
+          "#9ca09b",
+          "#c1c5c1",
+          "#edefed"
+        ]
+      },
+      "negative-ground-2": {
+        "role": "neutral",
+        "displayName": "Negative Ground Raised",
+        "canonical": "oklch(23.8% 0.010 145.3)",
+        "tonalRamp": [
+          "#090c09",
+          "#212521",
+          "#3d413d",
+          "#5a5f5a",
+          "#7a7f7a",
+          "#9ba09b",
+          "#c0c6c0",
+          "#edefed"
+        ]
+      },
+      "negative-text": {
+        "role": "neutral",
+        "displayName": "Negative Text",
+        "canonical": "oklch(93.9% 0.009 128.6)",
+        "tonalRamp": [
+          "#0a0c08",
+          "#232520",
+          "#3e413c",
+          "#5c5f59",
+          "#7c7e79",
+          "#9d9f9a",
+          "#c2c5bf",
+          "#edf0ea"
+        ]
+      },
+      "negative-text-2": {
+        "role": "neutral",
+        "displayName": "Negative Text Secondary",
+        "canonical": "oklch(73.2% 0.014 145.4)",
+        "tonalRamp": [
+          "#070d08",
+          "#202620",
+          "#3b423b",
+          "#596059",
+          "#788078",
+          "#99a199",
+          "#bec7be",
+          "#eaf1ea"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgb(20 23 20 / 0.14)",
+        "tonalRamp": [
+          "#090c09",
+          "#222522",
+          "#3d413d",
+          "#5b5f5b",
+          "#7b7e7a",
+          "#9ca09c",
+          "#c1c5c1",
+          "#edefed"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "rgb(20 23 20 / 0.3)",
+        "tonalRamp": [
+          "#090c09",
+          "#222522",
+          "#3d413d",
+          "#5b5f5b",
+          "#7b7e7a",
+          "#9ca09c",
+          "#c1c5c1",
+          "#edefed"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Sheet Title",
+        "purpose": "Hero title only; footer sign repeats it larger."
+      },
+      "headline": {
+        "displayName": "Section Title",
+        "purpose": "One per band, left column of the section head."
+      },
+      "title": {
+        "displayName": "Group Title",
+        "purpose": "Legend groups, values, steps, disciplines."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One per section head, set right."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, 34 to 48ch."
+      },
+      "label": {
+        "displayName": "Margin Label",
+        "purpose": "Field labels, imprint and stat keys; condensed spaced caps."
+      },
+      "place-name": {
+        "displayName": "Place Name",
+        "purpose": "Partners set like places on a sheet; map labels in the same voice."
+      },
+      "coordinate": {
+        "displayName": "Coordinate",
+        "purpose": "Coordinates and measurements only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "neatline-inner",
+        "value": "0 0 0 1.5px #141714",
+        "purpose": "Zero-blur stroke: inner rule of the double neatline (map, inset, canvas)."
+      },
+      {
+        "name": "instrument-outline",
+        "value": "0 0 0 1px #141714",
+        "purpose": "Zero-blur stroke framing readout and inset labels."
+      },
+      {
+        "name": "line-button",
+        "value": "inset 0 0 0 1px #141714",
+        "purpose": "Outline of the line button and toggles."
+      },
+      {
+        "name": "topbar-rule",
+        "value": "0 1px 0 rgb(20 23 20 / 0.3)",
+        "purpose": "Hairline under the topbar once scrolled."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "State transitions, reveals, diamonds, underline sweeps."
+      },
+      {
+        "name": "ease-io",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Loops such as the globe spin."
+      },
+      {
+        "name": "reveal",
+        "value": "translateY(18px) + opacity, content visible without JS",
+        "purpose": "Section content entrance."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "final state",
+        "purpose": "Every drawing renders complete; process traverse wraps vertically."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "860px"
+      },
+      {
+        "name": "lg",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Accent Button",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Primary action. A flat globe-blue fill with white text; hover deepens on paper and brightens in the traffic band.",
+      "html": "<button class=\"ds-btn ds-btn-accent\">Kërko ofertë <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 22px;font-family:var(--f-sans);font-size:.975rem;font-weight:620;font-variation-settings:'wdth' 104;border:0;border-radius:2px;cursor:pointer;text-decoration:none;transition:background-color .25s var(--ease-out),color .25s var(--ease-out),transform .25s var(--ease-out)} .ds-btn svg{transition:transform .35s var(--ease-out)} .ds-btn:hover svg:last-child{transform:translateX(3px)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px} .ds-btn-accent{background:var(--accent);color:#fff} .ds-btn-accent:hover{background:var(--accent-hover)} .ds-neg .ds-btn-accent:hover{background:var(--accent-bright)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action: paper fill, 1px inset ink outline, inverts on hover.",
+      "html": "<button class=\"ds-btn ds-btn-line\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/></svg> +383 44 239 065</button>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 22px;font-family:var(--f-sans);font-size:.975rem;font-weight:620;font-variation-settings:'wdth' 104;border:0;border-radius:2px;cursor:pointer;text-decoration:none;transition:background-color .25s var(--ease-out),color .25s var(--ease-out),transform .25s var(--ease-out)} .ds-btn svg{transition:transform .35s var(--ease-out)} .ds-btn:hover svg:last-child{transform:translateX(3px)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px} .ds-btn-line{background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)} .ds-btn-line:hover{background:var(--ink);color:var(--paper)}"
+    },
+    {
+      "name": "Logo",
+      "kind": "nav",
+      "refersTo": "logo",
+      "description": "The vector GEO-globe-Info logo as an image in the top bar at 172px; never retyped as text.",
+      "html": "<a class=\"ds-wordmark\" href=\"#\" aria-label=\"GeoInfo\"><img class=\"ds-wordmark__svg\" src=\"/logo.svg\" alt=\"\" width=\"172\"></a>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-wordmark{display:block;padding:16px 24px;background:var(--paper);color:var(--ink);text-decoration:none} .ds-wordmark__svg{display:block;width:172px;height:auto} .ds-wordmark:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px;border-radius:2px}"
+    },
+    {
+      "name": "Index Navigation",
+      "kind": "nav",
+      "refersTo": "lang-switch-on",
+      "description": "Top margin of the sheet: index links with a globe-blue-bright diamond on the active entry, and a mono SQ/EN switch.",
+      "html": "<nav class=\"ds-nav\"><ul><li><a href=\"#\" class=\"is-active\">Shërbimet</a></li><li><a href=\"#\">Si punojmë</a></li><li><a href=\"#\">Trafiku</a></li></ul><div class=\"ds-lang\"><button aria-pressed=\"true\">SQ</button><button aria-pressed=\"false\">EN</button></div></nav>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-nav{display:flex;align-items:center;gap:40px;padding:16px 24px;background:var(--paper);font-family:var(--f-sans)} .ds-nav ul{display:flex;gap:30px;margin:0;padding:0;list-style:none} .ds-nav a{position:relative;display:block;padding:8px 0;font-size:.925rem;font-weight:520;color:var(--ink-2);text-decoration:none;transition:color .2s} .ds-nav a::before{content:'';position:absolute;left:-11px;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--accent-bright);transform:scale(0) rotate(45deg);transition:transform .35s var(--ease-out)} .ds-nav a:hover,.ds-nav a.is-active{color:var(--ink)} .ds-nav a.is-active::before,.ds-nav a:hover::before{transform:scale(1) rotate(45deg)} .ds-nav a:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px} .ds-lang{display:flex;padding:3px;box-shadow:inset 0 0 0 1px var(--rule-2);border-radius:2px} .ds-lang button{border:0;background:transparent;cursor:pointer;padding:5px 9px;font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-size:.7rem;letter-spacing:.04em;color:var(--ink-3);border-radius:1px} .ds-lang button[aria-pressed='true']{background:var(--ink);color:var(--paper)} .ds-lang button:not([aria-pressed='true']):hover{color:var(--ink)}"
+    },
+    {
+      "name": "Order Sheet Field",
+      "kind": "input",
+      "refersTo": "order-field",
+      "description": "Borderless field inside the order sheet's double neatline; focus draws a globe-blue-bright bar, errors set the label and message in validation red.",
+      "html": "<div class=\"ds-order\"><div class=\"ds-order-head\"><span>Fletëporosi</span><span>GI-2026-0001</span></div><div class=\"ds-field\"><label for=\"ds-n\">Emri dhe mbiemri</label><input id=\"ds-n\" placeholder=\"Emri Mbiemri\"></div><div class=\"ds-field is-invalid\"><label for=\"ds-p\">Telefoni</label><input id=\"ds-p\" value=\"044\"><p class=\"ds-err\">Shkruani një numër të vlefshëm.</p></div></div>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-order{position:relative;margin:7px;border:1.5px solid var(--ink);background:var(--paper);font-family:var(--f-sans);max-width:420px} .ds-order::before{content:'';position:absolute;inset:-7px;border:1px solid var(--ink);pointer-events:none} .ds-order-head{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--ink);background:var(--paper-2);font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em} .ds-field{position:relative;padding:12px 18px 14px;border-bottom:1px solid var(--rule-2)} .ds-field label{display:block;font-size:.75rem;font-weight:560;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);font-variation-settings:'wdth' 85} .ds-field input{width:100%;margin-top:6px;padding:6px 0;border:0;background:transparent;color:var(--ink);font:inherit;font-size:1.05rem;outline:none} .ds-field input::placeholder{color:#7d857d} .ds-field::after{content:'';position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--accent-bright);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease-out)} .ds-field:focus-within::after{transform:scaleX(1)} .ds-field:focus-within label{color:var(--ink)} .ds-err{display:none;margin:4px 0 0;font-size:.8rem;color:var(--error)} .ds-field.is-invalid .ds-err{display:block} .ds-field.is-invalid label{color:var(--error)}"
+    },
+    {
+      "name": "Survey Readout",
+      "kind": "custom",
+      "refersTo": "readout",
+      "description": "Framed instrument with mono Hz/V/SD and E/N/H values divided by hairlines.",
+      "html": "<div class=\"ds-readout\"><div class=\"ds-ro-head\"><span class=\"ds-st\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 21.5 19.5h-19Z\" fill=\"#f6f7f4\" stroke=\"#141714\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"14\" r=\"1.8\" fill=\"#2f80dc\"/></svg> ST-04</span><span class=\"ds-mode\">Matje polare</span></div><dl><div><dt>Hz</dt><dd>095°50′50″</dd></div><div><dt>V</dt><dd>088°17′46″</dd></div><div class=\"sep\"><dt>E</dt><dd>7 516 083.56</dd></div><div class=\"sep\"><dt>N</dt><dd>4 725 246.57</dd></div></dl></div>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-readout{width:288px;background:var(--paper);box-shadow:0 0 0 1px var(--ink);font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-variant-numeric:tabular-nums;font-size:11px;color:var(--ink)} .ds-ro-head{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid var(--ink);font-size:10px;letter-spacing:.04em} .ds-st{display:inline-flex;align-items:center;gap:6px;font-weight:700} .ds-mode{color:var(--ink-3);text-transform:uppercase} .ds-readout dl{display:grid;grid-template-columns:1fr 1fr;margin:0} .ds-readout dl>div{display:grid;grid-template-columns:22px 1fr;padding:6px 10px;border-bottom:1px solid var(--rule)} .ds-readout dl>div:nth-child(odd){border-right:1px solid var(--rule)} .ds-readout dl>div.sep{border-top:1px solid var(--ink)} .ds-readout dt{color:var(--ink-3)} .ds-readout dd{margin:0;text-align:right;white-space:nowrap}"
+    },
+    {
+      "name": "Legend Entry",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Service group row: drawn symbol, title, mono count. When inactive, only the symbol and count dim; text stays ink-tertiary at full opacity.",
+      "html": "<ul class=\"ds-legend\"><li class=\"ds-lg is-active\"><span class=\"sym\"><svg viewBox=\"0 0 48 24\" width=\"48\" height=\"24\"><path d=\"M2 20 14 4 34 6 46 20Z\" fill=\"none\" stroke=\"#141714\" stroke-width=\"1.4\" stroke-dasharray=\"7 3 2 3\"/></svg></span><span class=\"t\">Matje për pronat</span><span class=\"c\">04</span></li><li class=\"ds-lg\"><span class=\"sym\"><svg viewBox=\"0 0 48 24\" width=\"48\" height=\"24\"><path d=\"M4 18h40\" stroke=\"#2167c4\" stroke-width=\"1.6\"/><circle cx=\"12\" cy=\"18\" r=\"3\" fill=\"#f6f7f4\" stroke=\"#141714\" stroke-width=\"1.4\"/></svg></span><span class=\"t\">Matje ndërtimi</span><span class=\"c\">03</span></li></ul>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-legend{margin:0;padding:0;list-style:none;font-family:var(--f-sans);max-width:520px} .ds-lg{display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:14px;padding:22px 0;border-top:1px solid var(--rule-2);cursor:pointer} .ds-lg:last-child{border-bottom:1px solid var(--rule-2)} .ds-lg .t{position:relative;font-size:1.5rem;font-weight:700;letter-spacing:-.022em;font-variation-settings:'wdth' 104;color:var(--ink-3);transition:color .45s var(--ease-out)} .ds-lg .sym,.ds-lg .c{opacity:.38;transition:opacity .45s var(--ease-out)} .ds-lg .c{font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-size:.75rem;color:var(--ink-3)} .ds-lg.is-active .t,.ds-lg:hover .t{color:var(--ink)} .ds-lg.is-active .sym,.ds-lg.is-active .c,.ds-lg:hover .sym,.ds-lg:hover .c{opacity:1}"
+    },
+    {
+      "name": "Cadastral Overlay",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "One real building and its fitted parcel: highlighted footprint in accent tint, neighbouring parcels in thin dash-dot ink, the batter-board offset dashed in the accent. Never overlaps existing footprints.",
+      "html": "<svg class=\"ds-ov\" viewBox=\"0 0 320 220\" width=\"320\" height=\"220\" role=\"img\" aria-label=\"Staking out one building\"><rect class=\"tile-fill\" x=\"0\" y=\"0\" width=\"320\" height=\"220\"/><path class=\"nb\" d=\"M8 20H96V112H8Z\"/><path class=\"nb\" d=\"M224 20H312V112H224Z\"/><path class=\"nb\" d=\"M8 124H96V206H8Z\"/><path class=\"access\" d=\"M0 196H320V214H0Z\"/><path class=\"b-line\" d=\"M108 20H212V184H108Z\"/><path class=\"board\" d=\"M126 54H194V150H126Z\"/><path class=\"fp-main\" d=\"M136 64H184V140H136Z\"/><circle class=\"stone on\" cx=\"108\" cy=\"20\" r=\"4\"/><circle class=\"stone\" cx=\"212\" cy=\"184\" r=\"4\"/><text x=\"140\" y=\"40\">14.20 m</text></svg>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-ov{display:block;background:var(--paper);box-shadow:0 0 0 1.5px var(--ink)} .ds-ov .tile-fill{fill:var(--paper)} .ds-ov text{font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-size:10.5px;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.2px;stroke-linejoin:round} .ds-ov .nb{fill:none;stroke:var(--ink);stroke-width:.8;stroke-opacity:.55;stroke-dasharray:6 3 1.5 3} .ds-ov .access{fill:var(--paper-3);stroke:var(--ink);stroke-width:1} .ds-ov .b-line{fill:rgb(33 103 196/.1);stroke:var(--ink);stroke-width:2;stroke-dasharray:12 4 2 4} .ds-ov .board{fill:none;stroke:var(--accent);stroke-width:1;stroke-dasharray:3 3} .ds-ov .fp-main{fill:var(--accent-tint);stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round} .ds-ov .stone{fill:var(--paper);stroke:var(--ink);stroke-width:1.5} .ds-ov .stone.on{fill:var(--accent-bright)}"
+    },
+    {
+      "name": "Traverse Station",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "A station on a dash-dot traverse: triangle symbol with the mono station ID beside it, never above the heading as a kicker.",
+      "html": "<div class=\"ds-station\"><span class=\"pt\"><svg width=\"40\" height=\"40\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 21.5 19.5h-19Z\" fill=\"#f6f7f4\" stroke=\"#141714\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"14\" r=\"1.8\" fill=\"#2f80dc\"/></svg></span><span class=\"id\">ST-1</span><h3>Kërkesa</h3><p>Na tregoni parcelën dhe qëllimin e matjes.</p></div>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-station{position:relative;padding-top:78px;max-width:320px;font-family:var(--f-sans);color:var(--ink)} .ds-station .pt{position:absolute;left:0;top:0} .ds-station .id{position:absolute;left:50px;top:12px;font-family:var(--f-mono);font-variation-settings:'wdth' 87.5;font-size:.78rem;font-weight:700} .ds-station h3{margin:0;font-size:2rem;font-weight:740;letter-spacing:-.03em;font-variation-settings:'wdth' 108;line-height:1.02} .ds-station p{margin:14px 0 0;color:var(--ink-2);max-width:34ch}"
+    },
+    {
+      "name": "Traffic Segmented Toggle",
+      "kind": "chip",
+      "refersTo": "segment-on",
+      "description": "Scenario toggle in the film-negative traffic band.",
+      "html": "<div class=\"ds-neg\"><div class=\"ds-seg\"><button class=\"is-on\">Sot</button><button>Me projekt</button></div></div>",
+      "css": ":host{--paper:#f6f7f4;--paper-2:#edefe9;--paper-3:#e3e6df;--ink:#141714;--ink-2:#394039;--ink-3:#5f675f;--rule:rgb(20 23 20/.14);--rule-2:rgb(20 23 20/.3);--bistre:#9a5b2e;--bistre-2:#c4936c;--hydro:#1f8ac0;--hydro-deep:#16709f;--accent:#2167c4;--accent-hover:#1a54a3;--accent-bright:#2f80dc;--accent-light:#74b1f2;--accent-tint:#d6e5f8;--error:#b3361a;--neg:#121512;--neg-line:rgb(246 247 244/.12);--neg-text:#e9ece6;--neg-text-2:#a3aba3;--f-sans:'Archivo Variable','Archivo',system-ui,sans-serif;--f-mono:'Martian Mono Variable','Martian Mono',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1)} .ds-neg{background:var(--neg);padding:24px;font-family:var(--f-sans)} .ds-seg{display:inline-flex;padding:3px;background:rgb(12 14 12/.85);box-shadow:inset 0 0 0 1px rgb(246 247 244/.3)} .ds-seg button{border:0;background:transparent;color:var(--neg-text-2);cursor:pointer;padding:8px 12px;font:inherit;font-size:.84rem;font-weight:560;border-radius:1px;transition:background-color .25s,color .25s} .ds-seg button.is-on{background:var(--neg-text);color:var(--ink)} .ds-seg button:not(.is-on):hover{color:var(--neg-text)} .ds-seg button:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Map Sheet",
+    "overview": "Every surface is a printed 1:25 000 topographic sheet. The page is paper; colour arrives as print plates (planimetry black, contour bistre, hydro cyan, vegetation green), each with a fixed cartographic meaning, plus one accent taken from the logo's globe. Structure comes from map furniture: a double neatline with coordinate ticks, registration marks, hairline rules, leader lines, scale bars and an imprint strip. The furniture organises the content; it is not ornament.\n\nDensity follows a working map. Margins are generous, labels are small and set on the drawing itself, and numbers are tabular. Drawings are built from real geometry (terrain, OSM building footprints, parcels, traverses, traffic) and animate the way a surveyor works: stations fire rays, readouts resolve digit by digit, boundaries are staked point by point. The one deliberate inversion is the traffic band, printed as a film negative of the black plate.\n\nThe system rejects the category default of a stock-photo hero over a grid of blue icon cards. It uses no cards, no decorative shadows and no gradients on surfaces.",
+    "keyCharacteristics": [
+      "Paper-white ground, never cream; colour is plate ink with cartographic meaning.",
+      "One state and action colour: the logo's globe blue.",
+      "The brand mark is the vector GEO-globe-Info logo, never retyped as text.",
+      "Containers are framed by a neatline (a 1px rule outside a 1.5px rule), never lifted by shadow.",
+      "Sections are bands divided by full-width ink rules and hairlines.",
+      "Archivo's width axis does the typographic work: wide for titles, condensed and spaced for labels, italic for water.",
+      "Mono appears only where a number is a coordinate or a measurement.",
+      "Every drawing has a defined final state, and reduced motion shows that state."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "The logo's globe blue is the only state and action colour, and the only colour of survey work laid onto the map. Cyan means water, bistre means relief and earthen lines, green means vegetation, and none of them may signal state or interaction. The single exception is validation red, which marks an invalid form field and appears nowhere else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cyan Is Not Blue Rule",
+        "body": "Water and the accent sit apart by hue: water is cyan (around 225 to 238 degrees in OKLCH), the accent is globe blue (around 251 to 257). Never draw water in the accent ramp, and never draw an action or a highlight in the hydro ramp.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plate Meaning Rule",
+        "body": "A plate colour may only draw its own feature class. If a new drawing needs colour, choose the plate whose meaning fits, or use ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Film Negative Rule",
+        "body": "The traffic section is a deliberate negative band: negative ground, negative text, and hairlines in paper at 0.12 to 0.4 alpha. The accent stays globe blue inside it, shifting to globe-blue-light for marks and selection and to globe-blue-bright for button hover. Do not add a second dark band, and do not invert any other section.",
+        "section": "colors"
+      },
+      {
+        "name": "The Instrument Mono Rule",
+        "body": "Mono is only for coordinates and measurements: values a total station, GNSS receiver or scale bar would produce. Running text, headings and buttons are always Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Station Label Rule",
+        "body": "A station label (ST-1, ST-04) sits beside its triangle symbol, in mono, as part of the drawing. It is never a kicker or eyebrow stacked above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Map Lettering Rule",
+        "body": "Map labels carry a paper halo (paint-order stroke in map-paper, 3 to 3.5px) so they read over linework without a background box.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Lift Rule",
+        "body": "No decorative shadows. A blurred or offset shadow never appears. `box-shadow` is allowed only as a zero-blur, zero-offset stroke that stands in for a border.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Double Neatline Rule",
+        "body": "A container that needs presence is framed like a map: an outer 1px ink rule, a gap (7 to 10px, or the 24px margin band on the sheet), then an inner 1.5px ink rule. The hero sheet, the legend inset, the traffic canvas and the order sheet all use it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Fitted Parcel Rule",
+        "body": "A cadastral drawing is fitted to one real building and its parcel, bounded halfway to its neighbours and kept short of street centrelines. Drawings never overlap existing footprints.",
+        "section": "components"
+      },
+      {
+        "name": "The Final State Rule",
+        "body": "Under reduced motion every drawing renders in its final state: the traverse resolved, the axo fully built, the traffic simulation pre-stepped, and the process traverse wrapped vertically instead of pinned. Nothing is withheld because it would otherwise animate.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do use globe blue for every action, active and focus state and for survey work laid on the map, and for nothing decorative.",
+      "Do use the vector logo as the brand mark, at 172px in the top bar, and the globe alone as the favicon.",
+      "Do draw water in hydro cyan, visibly greener than the accent.",
+      "Do fit cadastral drawings to one real building and its parcel, bounded halfway to its neighbours.",
+      "Do frame important containers with the double neatline: a 1px outer rule, a gap, then a 1.5px inner rule.",
+      "Do separate bands with full-width ink rules and rows with hairlines.",
+      "Do keep buttons as flat fills: a globe-blue fill with white text, or a paper fill with a 1px inset ink outline.",
+      "Do set station labels in mono beside their triangle symbols, inside the drawing.",
+      "Do give map lettering a paper halo instead of a background box.",
+      "Do keep inactive legend text at ink-tertiary at full opacity, and dim only the symbols and counts.",
+      "Do define a final state for every drawing and show it under reduced motion."
+    ],
+    "donts": [
+      "Don't use cards, tiles or boxed service grids. Bands are separated by hairlines.",
+      "Don't use decorative shadows of any kind. Box-shadow is only a zero-blur stroke.",
+      "Don't use cyan, bistre or green for interaction or state. They are plate colours.",
+      "Don't use validation red for anything but an invalid form field.",
+      "Don't retype or restyle the logo as live text, or use logo indigo as a UI colour.",
+      "Don't let a cadastral drawing overlap an existing building footprint.",
+      "Don't put kickers or eyebrows above headings, and don't use station labels as kickers.",
+      "Don't set prose, headings or buttons in mono. Mono is only for coordinates and measurements.",
+      "Don't add a second dark band or invert any section except the traffic film negative.",
+      "Don't use a cream ground. Map paper is a cool off-white.",
+      "Don't fade inactive text with opacity."
+    ]
+  }
+}

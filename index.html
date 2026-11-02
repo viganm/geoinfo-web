@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>GeoInfo — Gjeodezi, kadastër dhe trafik në Kosovë</title>
+  <meta name="description" content="GeoInfo Sh.P.K.: matje gjeodezike e kadastrale, hartim GIS, matje ndërtimi, arkitekturë dhe planifikim trafiku. Distributori zyrtar i PTV Group për Kosovën." />
+  <meta name="theme-color" content="#F6F7F4" />
+  <meta property="og:title" content="GeoInfo — Vizion i qartë." />
+  <meta property="og:description" content="Matim tokën me saktësi centimetrike dhe modelojmë trafikun që lëviz mbi të." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script>
+    try { var l = localStorage.getItem('gi-lang'); if (l === 'en' || l === 'sq') document.documentElement.lang = l; } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Kalo te përmbajtja</a>
+
+  <!-- ============ TOP MARGIN / NAV ============ -->
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#top" aria-label="GeoInfo — fillimi">
+      <img class="wordmark__svg" src="/logo.svg" alt="" width="172" height="32" />
+    </a>
+
+    <nav class="nav" aria-label="Kryesore" data-i18n-attr="aria-label:nav.label">
+      <ul class="nav__list">
+        <li><a href="#sherbimet" data-spy="sherbimet" data-i18n="nav.services">Shërbimet</a></li>
+        <li><a href="#procesi" data-spy="procesi" data-i18n="nav.process">Si punojmë</a></li>
+        <li><a href="#trafiku" data-spy="trafiku" data-i18n="nav.traffic">Trafiku</a></li>
+        <li><a href="#arkitekture" data-spy="arkitekture" data-i18n="nav.arch">Arkitekturë &amp; prona</a></li>
+        <li><a href="#partneret" data-spy="partneret" data-i18n="nav.partners">Partnerët</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar__end">
+      <div class="lang" role="group" aria-label="Gjuha" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang__btn" data-lang="sq" aria-pressed="true">SQ</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn--accent btn--sm" href="#kontakt"><span data-i18n="cta.quote">Kërko ofertë</span></a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:menu.open" aria-label="Hap menynë">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <ul class="menu__list">
+      <li><a href="#sherbimet" data-i18n="nav.services">Shërbimet</a></li>
+      <li><a href="#procesi" data-i18n="nav.process">Si punojmë</a></li>
+      <li><a href="#trafiku" data-i18n="nav.traffic">Trafiku</a></li>
+      <li><a href="#arkitekture" data-i18n="nav.arch">Arkitekturë &amp; prona</a></li>
+      <li><a href="#partneret" data-i18n="nav.partners">Partnerët</a></li>
+      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <a class="menu__phone" href="tel:+38344239065">+383 44 239 065</a>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO: THE SHEET ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="sheet">
+        <div class="reg reg--tl" aria-hidden="true"></div>
+        <div class="reg reg--tr" aria-hidden="true"></div>
+
+        <div class="neatline">
+          <div class="map" id="heroMap" aria-hidden="true"></div>
+          <div class="ticks" id="heroTicks" aria-hidden="true"></div>
+
+          <div class="hero__copy">
+            <h1 class="hero__title" id="hero-title">
+              <span class="line"><span data-i18n="hero.t1">Vizion</span></span>
+              <span class="line"><span data-i18n="hero.t2">i qartë.</span></span>
+            </h1>
+            <p class="hero__lede" data-i18n="hero.lede">Matim tokën me saktësi centimetrike dhe modelojmë trafikun që lëviz mbi të. Gjeodezi, kadastër, arkitekturë dhe transport për Kosovën.</p>
+            <div class="hero__actions">
+              <a class="btn btn--accent" href="#kontakt">
+                <span data-i18n="cta.quote">Kërko ofertë</span>
+                <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" /></svg>
+              </a>
+              <a class="btn btn--line" href="tel:+38344239065">
+                <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.6 3.5 4.3 4.2c-.8.3-1.2 1.1-1 1.9 1.6 5.6 5.9 9.9 11.5 11.5.8.2 1.6-.2 1.9-1l.7-2.3c.2-.6-.1-1.3-.7-1.6l-2.4-1.1c-.6-.3-1.2-.1-1.6.4l-.8 1c-2-.9-3.6-2.5-4.5-4.5l1-.8c.5-.4.7-1 .4-1.6L7.7 4c-.3-.5-.9-.8-1.5-.6Z" /></svg>
+                <span>+383 44 239 065</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="readout" id="readout" aria-hidden="true">
+            <div class="readout__head">
+              <span class="readout__st"><svg viewBox="0 0 12 12"><path d="M6 1.2 11 10.4H1Z" /><circle cx="6" cy="7.2" r="1.1" /></svg><span id="roStation">ST-04</span></span>
+              <span class="readout__mode" data-i18n="ro.mode">Matje polare</span>
+            </div>
+            <dl class="readout__grid">
+              <div><dt>Hz</dt><dd id="roHz">000°00′00″</dd></div>
+              <div><dt>V</dt><dd id="roV">000°00′00″</dd></div>
+              <div><dt>SD</dt><dd id="roSD">0000.000 m</dd></div>
+              <div class="sep"><dt>E</dt><dd id="roE">7 500 000.00</dd></div>
+              <div><dt>N</dt><dd id="roN">4 700 000.00</dd></div>
+              <div><dt>H</dt><dd id="roH">000.00 m</dd></div>
+            </dl>
+          </div>
+
+          <div class="probe" id="probe" aria-hidden="true">
+            <div class="probe__x"></div><div class="probe__y"></div>
+            <div class="probe__tag"><span class="probe__e">E —</span><span class="probe__n">N —</span><span class="probe__h">H —</span></div>
+          </div>
+          <div class="measure-hint" id="measureHint" aria-hidden="true">
+            <span data-i18n="hero.hint">Klikoni në hartë për të matur distancën</span>
+            <button type="button" class="measure-hint__clear" id="measureClear" hidden data-i18n="hero.clear">Pastro</button>
+          </div>
+        </div>
+
+        <div class="sheet__foot">
+          <div class="scalebar" id="scalebar" aria-hidden="true">
+            <div class="scalebar__bar"><i></i><i></i><i></i><i></i></div>
+            <div class="scalebar__labels"><span>0</span><span id="sbMid">1</span><span id="sbEnd">2 km</span></div>
+          </div>
+          <dl class="imprint">
+            <div><dt data-i18n="foot.interval">Ekuidistanca</dt><dd>20 m</dd></div>
+            <div><dt data-i18n="foot.proj">Projeksioni</dt><dd>KOSOVAREF01 · GK zona 7</dd></div>
+            <div class="hide-sm"><dt data-i18n="foot.conv">Konvergjenca</dt><dd>0°07′ E</dd></div>
+            <div class="hide-sm"><dt data-i18n="foot.data">Të dhënat</dt><dd>SRTM · © OpenStreetMap</dd></div>
+          </dl>
+          <div class="colorbar" aria-hidden="true"><i class="k"></i><i class="b"></i><i class="h"></i><i class="g"></i><i class="o"></i></div>
+        </div>
+        <div class="reg reg--bl" aria-hidden="true"></div>
+        <div class="reg reg--br" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO + VALUES ============ -->
+    <section class="intro" id="rreth" aria-labelledby="intro-title">
+      <div class="wrap">
+        <h2 class="intro__statement" id="intro-title" data-i18n="intro.statement">GeoInfo është partneri juaj i besueshëm në inxhinieri. Matim kufij, terrene dhe rrjete rrugore, nga një parcelë e vetme deri te qyteti i tërë.</h2>
+
+        <div class="traverse" id="valuesTraverse">
+          <svg class="traverse__line" id="travSvg" aria-hidden="true"></svg>
+          <ol class="values">
+            <li class="value">
+              <span class="value__pt" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21.5 19.5h-19Z" /><circle cx="12" cy="14" r="1.8" /></svg></span>
+              <h3 class="value__name" data-i18n="v1.name">Saktësia</h3>
+              <p data-i18n="v1.text">Matje dhe të dhëna të sakta. Çdo llogaritje dhe çdo raport duhet të jetë i besueshëm, sepse mbi to ndërtohet integriteti i punës sonë.</p>
+            </li>
+            <li class="value">
+              <span class="value__pt" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21.5 19.5h-19Z" /><circle cx="12" cy="14" r="1.8" /></svg></span>
+              <h3 class="value__name" data-i18n="v2.name">Ekspertiza</h3>
+              <p data-i18n="v2.text">Njohuri profesionale të teknikave të matjes, të standardeve dhe të rregulloreve të industrisë, nga kadastra te modelimi i trafikut.</p>
+            </li>
+            <li class="value">
+              <span class="value__pt" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21.5 19.5h-19Z" /><circle cx="12" cy="14" r="1.8" /></svg></span>
+              <h3 class="value__name" data-i18n="v3.name">Koha</h3>
+              <p data-i18n="v3.text">Projektet përfundojnë në afatin e dakorduar, pa kompromis në cilësi. Afati është pjesë e saktësisë.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES: THE LEGEND ============ -->
+    <section class="legend" id="sherbimet" aria-labelledby="legend-title">
+      <div class="wrap legend__wrap">
+        <div class="legend__intro">
+          <h2 class="h-section" id="legend-title" data-i18n="legend.title">Legjenda e shërbimeve</h2>
+          <p class="legend__lede" data-i18n="legend.lede">Tetë fusha, njëzet e pesë shërbime. Çdo simbol në këtë hartë është punë që e bëjmë në terren.</p>
+        </div>
+
+        <div class="legend__body">
+          <div class="legend__list" id="legendList">
+            <article class="lg" data-group="property">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-bound" d="M2 12h44" /><circle cx="9" cy="12" r="2.4" /><circle cx="24" cy="12" r="2.4" /><circle cx="39" cy="12" r="2.4" /></svg></span>
+                <h3 class="lg__title" data-i18n="g1.t">Matje për pronat</h3>
+                <span class="lg__count">4</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g1.s1">Matje kufitare</strong><span data-i18n="g1.d1">Përcaktojmë vijat kufitare të pronës dhe zgjidhim mosmarrëveshjet kufitare.</span></li>
+                <li><strong data-i18n="g1.s2">Matje topografike</strong><span data-i18n="g1.d2">Hartojmë konturet dhe veçoritë e terrenit për planifikim dhe projektim.</span></li>
+                <li><strong data-i18n="g1.s3">Tituj pronësorë (ALTA/NSPS)</strong><span data-i18n="g1.d3">Informacion i detajuar për pronën, për qëllime sigurimi të titullit.</span></li>
+                <li><strong data-i18n="g1.s4">Ndarje parcelash</strong><span data-i18n="g1.d4">Ndajmë tokën në parcela për zhvillim ose shitje.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="construction">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><rect class="s-fp" x="8" y="5" width="32" height="14" /><path class="s-stake" d="M5 2l6 6M11 2 5 8M37 16l6 6M43 16l-6 6" /></svg></span>
+                <h3 class="lg__title" data-i18n="g2.t">Matje ndërtimi</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g2.s1">Piketim në terren</strong><span data-i18n="g2.d1">Shënojmë në terren pozicionet e ndërtesave, rrugëve dhe instalimeve sipas projektit.</span></li>
+                <li><strong data-i18n="g2.s2">Matje as-built</strong><span data-i18n="g2.d2">Dokumentojmë pozitën e strukturave të përfunduara, për regjistrim dhe përputhshmëri.</span></li>
+                <li><strong data-i18n="g2.s3">Matje monitoruese</strong><span data-i18n="g2.d3">Ndjekim lëvizjet e strukturave, të tokës dhe të infrastrukturës me kalimin e kohës.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="infra">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-case" d="M2 9h44M2 15h44" /><path class="s-util" d="M2 20h44" /></svg></span>
+                <h3 class="lg__title" data-i18n="g3.t">Inxhinieri &amp; infrastrukturë</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g3.s1">Rrugë dhe trasa</strong><span data-i18n="g3.d1">Planifikojmë dhe hartojmë trasa për rrugë automobilistike, gazsjellës dhe linja të tjera.</span></li>
+                <li><strong data-i18n="g3.s2">Matje hidrografike</strong><span data-i18n="g3.d2">Hartojmë relievin nënujor për ura, diga, porte dhe menaxhim të përmbytjeve.</span></li>
+                <li><strong data-i18n="g3.s3">Infrastrukturë nëntokësore</strong><span data-i18n="g3.d3">Lokalizojmë dhe hartojmë tubacionet, kabllot dhe kanalet nëntokësore.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="environment">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-wave" d="M2 8q5.5-4 11 0t11 0 11 0 11 0M2 15q5.5-4 11 0t11 0 11 0 11 0" /></svg></span>
+                <h3 class="lg__title" data-i18n="g4.t">Mjedis &amp; gjeologji</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g4.s1">Zonat e përmbytjeve</strong><span data-i18n="g4.d1">Përcaktojmë nëse një pronë ndodhet brenda një zone të përmbytshme.</span></li>
+                <li><strong data-i18n="g4.s2">Kontrolli i erozionit</strong><span data-i18n="g4.d2">Identifikojmë zonat e prirura për erozion dhe rekomandojmë masa mbrojtëse.</span></li>
+                <li><strong data-i18n="g4.s3">Miniera dhe karriera</strong><span data-i18n="g4.d3">Hartojmë dhe monitorojmë operacionet dhe burimet minerare.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="advanced">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-trig" d="M24 3 33 20H15Z" /><circle class="s-dot" cx="24" cy="14.5" r="1.8" /><path class="s-net" d="M2 20 15 20M33 20 46 20" /></svg></span>
+                <h3 class="lg__title" data-i18n="g5.t">Teknologji të avancuara</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g5.s1">Skanim 3D me laser</strong><span data-i18n="g5.d1">Modele të detajuara 3D të strukturave dhe vendeve, për projektim, analizë ose ruajtje historike.</span></li>
+                <li><strong data-i18n="g5.s2">Matje ajrore me dron</strong><span data-i18n="g5.d2">Imazhe dhe harta ajrore për zona të mëdha ose të vështira për t’u arritur.</span></li>
+                <li><strong data-i18n="g5.s3">Matje gjeodezike</strong><span data-i18n="g5.d3">Matje në shkallë të gjerë, shpesh për qëllime shtetërore ose shkencore.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="realestate">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-parcel" d="M4 4h18v16H4zM22 4h22v16H22z" /><path class="s-hatch" d="M24 20 40 4M30 20 44 6M24 13 33 4" /></svg></span>
+                <h3 class="lg__title" data-i18n="g6.t">Pasuri e paluajtshme &amp; zhvillim</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g6.s1">Studime fizibiliteti</strong><span data-i18n="g6.d1">Vlerësojmë përshtatshmërinë e tokës për zhvillim.</span></li>
+                <li><strong data-i18n="g6.s2">Planifikim parcelash</strong><span data-i18n="g6.d2">Ndarja dhe planifikimi i tokës për zhvillim banesor ose komercial.</span></li>
+                <li><strong data-i18n="g6.s3">Vlerësime pronësore</strong><span data-i18n="g6.d3">Sigurojmë të dhënat për përcaktimin e vlerës së pronës.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="legal">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-claim" d="M2 9h44" /><path class="s-true" d="M2 15h44" /></svg></span>
+                <h3 class="lg__title" data-i18n="g7.t">Ligjore &amp; përputhshmëri</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g7.s1">Mosmarrëveshje kufitare</strong><span data-i18n="g7.d1">Dëshmi dhe ekspertizë në raste ligjore që përfshijnë kufijtë e pronave.</span></li>
+                <li><strong data-i18n="g7.s2">Servitute</strong><span data-i18n="g7.d2">Përcaktojmë dhe hartojmë zonat e servitutit për instalime ose të drejta kalimi.</span></li>
+                <li><strong data-i18n="g7.s3">Leje ndërtimi</strong><span data-i18n="g7.d3">Dokumentacioni dhe matjet e nevojshme për leje dhe përputhshmëri me rregulloret.</span></li>
+              </ul>
+            </article>
+
+            <article class="lg" data-group="mapping">
+              <header class="lg__head" tabindex="0">
+                <span class="lg__sym" aria-hidden="true"><svg viewBox="0 0 48 24"><path class="s-grid" d="M4 3h40v18H4zM17.3 3v18M30.6 3v18M4 12h40" /></svg></span>
+                <h3 class="lg__title" data-i18n="g8.t">Hartim &amp; të dhëna</h3>
+                <span class="lg__count">3</span>
+              </header>
+              <ul class="lg__items">
+                <li><strong data-i18n="g8.s1">Hartim GIS</strong><span data-i18n="g8.d1">Harta për Sistemet e Informacionit Gjeografik, për analiza dhe planifikim.</span></li>
+                <li><strong data-i18n="g8.s2">Hartim kadastral</strong><span data-i18n="g8.d2">Dokumentojmë kufijtë e pronave për regjistrat publikë.</span></li>
+                <li><strong data-i18n="g8.s3">Ortofoto</strong><span data-i18n="g8.d3">Fotografi ajrore të korrigjuara gjeometrikisht, për hartim të saktë.</span></li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="legend__window-col">
+            <figure class="inset" id="inset">
+              <div class="inset__frame">
+                <div class="inset__map" id="insetMap" aria-hidden="true"></div>
+                <div class="inset__label" aria-hidden="true">
+                  <span class="inset__name" id="insetName">Matje për pronat</span>
+                  <span class="inset__coord" id="insetCoord">E 7 513 640 · N 4 724 380</span>
+                </div>
+              </div>
+              <figcaption class="inset__cap" id="insetCap" data-i18n="inset.cap">Prerje nga harta e Prishtinës. Vizatimet mbi të janë ilustruese.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS: THE TRAVERSE ============ -->
+    <section class="process" id="procesi" aria-labelledby="process-title">
+      <div class="process__pin">
+        <div class="wrap process__head">
+          <h2 class="h-section" id="process-title" data-i18n="process.title">Si punojmë</h2>
+          <p class="process__lede" data-i18n="process.lede">Çdo matje është një poligon i mbyllur: nisemi nga pika të njohura, matim, dhe kthehemi aty ku filluam për të provuar që gjithçka përputhet.</p>
+        </div>
+        <div class="process__track" id="processTrack">
+          <svg class="process__svg" id="processSvg" aria-hidden="true"></svg>
+          <ol class="steps" id="steps">
+            <li class="step">
+              <span class="step__id">ST-1</span>
+              <h3 data-i18n="p1.t">Kërkesa</h3>
+              <p data-i18n="p1.d">Na tregoni pronën dhe qëllimin. Shqyrtojmë dokumentet: kopjen e planit, certifikatën e pronës dhe projektin, nëse ekziston.</p>
+            </li>
+            <li class="step">
+              <span class="step__id">ST-2</span>
+              <h3 data-i18n="p2.t">Rrjeti i kontrollit</h3>
+              <p data-i18n="p2.d">Lidhemi me pikat gjeodezike në sistemin KOSOVAREF01 me GNSS, që çdo koordinatë të jetë në sistemin shtetëror.</p>
+            </li>
+            <li class="step">
+              <span class="step__id">ST-3</span>
+              <h3 data-i18n="p3.t">Matja në terren</h3>
+              <p data-i18n="p3.d">Stacione totale dhe GNSS RTK nga Leica Geosystems, skaner ose dron. Instrumentin e zgjedhim sipas terrenit dhe saktësisë që kërkohet.</p>
+            </li>
+            <li class="step">
+              <span class="step__id">ST-4</span>
+              <h3 data-i18n="p4.t">Përpunimi</h3>
+              <p data-i18n="p4.d">Llogarisim, kontrollojmë mbylljen e poligonit dhe gabimet, pastaj hartojmë në CAD dhe GIS.</p>
+            </li>
+            <li class="step">
+              <span class="step__id">ST-5</span>
+              <h3 data-i18n="p5.t">Dorëzimi</h3>
+              <p data-i18n="p5.d">Elaborati, hartat dhe skedarët (DWG, SHP, PDF), gati për kadastrën, komunën ose projektuesin tuaj.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAFFIC ============ -->
+    <section class="traffic" id="trafiku" aria-labelledby="traffic-title">
+      <div class="wrap">
+        <div class="traffic__head">
+          <h2 class="h-section" id="traffic-title" data-i18n="traffic.title">Trafiku &amp; transporti</h2>
+          <p class="traffic__lede" data-i18n="traffic.lede">Rrjeti rrugor duhet ta mbajë trafikun pa vonesa të mëdha, me rrezik të ulët aksidentesh dhe me ndikim minimal në mjedis. Ne e modelojmë para se të ndërtohet.</p>
+        </div>
+
+        <div class="ptv" id="ptv">
+          <div class="ptv__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" /><circle class="ptv__ring" cx="32" cy="32" r="23.5" /><path class="ptv__tri" d="M32 17 45 40H19Z" /><circle class="ptv__dot" cx="32" cy="32.5" r="3" /><path class="ptv__tick" d="M32 3v6M32 55v6M3 32h6M55 32h6" /></svg>
+          </div>
+          <div class="ptv__body">
+            <p class="ptv__title" data-i18n="ptv.title">Distributori zyrtar i PTV Group për Kosovën</p>
+            <p class="ptv__text" data-i18n="ptv.text">GeoInfo përfaqëson PTV Group në Kosovë. Për licenca, demonstrime dhe pyetje rreth softuerëve PTV, flisni drejtpërdrejt me ne.</p>
+          </div>
+          <ul class="ptv__products" aria-label="PTV">
+            <li><b>PTV Visum</b><span data-i18n="ptv.visum">Planifikim transporti</span></li>
+            <li><b>PTV Vissim</b><span data-i18n="ptv.vissim">Simulim mikroskopik</span></li>
+          </ul>
+          <a class="btn btn--accent" href="#kontakt" data-service="ptv"><span data-i18n="ptv.cta">Pyetni për licencë</span>
+            <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" /></svg>
+          </a>
+        </div>
+
+        <figure class="sim" id="sim">
+          <div class="sim__frame">
+            <canvas class="sim__canvas" id="simCanvas" aria-label="Simulim trafiku në rrjetin rrugor të Prishtinës" role="img" data-i18n-attr="aria-label:sim.aria"></canvas>
+            <div class="sim__hud">
+              <div class="sim__toggle" role="group" aria-label="Skenari" data-i18n-attr="aria-label:sim.scenario">
+                <button type="button" class="seg is-on" data-scn="now" aria-pressed="true" data-i18n="sim.now">Gjendja aktuale</button>
+                <button type="button" class="seg" data-scn="opt" aria-pressed="false" data-i18n="sim.opt">Sinjale adaptive + ITS</button>
+              </div>
+              <dl class="sim__stats">
+                <div><dt data-i18n="sim.veh">Automjete</dt><dd id="stVeh">0</dd></div>
+                <div><dt data-i18n="sim.speed">Shpejtësia mes.</dt><dd><span id="stSpd">0</span> km/h</dd></div>
+                <div><dt data-i18n="sim.delay">Në kolonë</dt><dd><span id="stDel">0</span> %</dd></div>
+                <div><dt>LOS</dt><dd id="stLos" class="los">–</dd></div>
+              </dl>
+            </div>
+            <div class="sim__legend" aria-hidden="true">
+              <span data-i18n="sim.fast">rrjedhë e lirë</span><i class="sim__ramp"></i><span data-i18n="sim.slow">kolonë</span>
+            </div>
+          </div>
+          <figcaption class="sim__cap" data-i18n="sim.cap">Simulim ilustrues mbi rrjetin real rrugor rreth Rrethit të Madh, Prishtinë. Rrugët © OpenStreetMap.</figcaption>
+        </figure>
+
+        <div class="disciplines">
+          <article class="disc">
+            <h3 data-i18n="t1.t">Modelimi i trafikut</h3>
+            <p data-i18n="t1.d">Modelet e trafikut vlerësojnë lëvizjen dhe ndikimin e saj në mjedis. Punojmë me programet moderne PTV Visum dhe PTV Vissim.</p>
+            <ul>
+              <li data-i18n="t1.l1">Krijojmë, operojmë dhe mirëmbajmë modele transporti</li>
+              <li data-i18n="t1.l2">Llogarisim ndikimin ekonomik dhe mjedisor të trafikut</li>
+              <li data-i18n="t1.l3">Modele për transportin individual dhe publik</li>
+              <li data-i18n="t1.l4">Simulime të fluksit dhe analiza të mbingarkesës</li>
+            </ul>
+          </article>
+          <article class="disc">
+            <h3 data-i18n="t2.t">Planifikimi &amp; projektimi</h3>
+            <p data-i18n="t2.d">Identifikojmë pikat problematike, përcaktojmë objektivat dhe i paraqesim rezultatet qartë për vendimmarrësit.</p>
+            <ul>
+              <li data-i18n="t2.l1">Rrugë urbane dhe rurale</li>
+              <li data-i18n="t2.l2">Qetësimi dhe siguria e trafikut</li>
+              <li data-i18n="t2.l3">Trafiku me biçikleta dhe hapësirat për këmbësorë</li>
+              <li data-i18n="t2.l4">Parkingje, terminale autobusësh dhe hekurudhash</li>
+            </ul>
+          </article>
+          <article class="disc">
+            <h3 data-i18n="t3.t">Sistemet inteligjente të transportit</h3>
+            <p data-i18n="t3.d">ITS rrit sigurinë, rrjedhën dhe informimin. Jemi të përfshirë në të gjitha fazat, nga analiza te mbikëqyrja.</p>
+            <ul>
+              <li data-i18n="t3.l1">Menaxhim strategjik i trafikut</li>
+              <li data-i18n="t3.l2">Drejtim dinamik i rrugës</li>
+              <li data-i18n="t3.l3">Sisteme parkimi dhe informimi për udhëtarët</li>
+              <li data-i18n="t3.l4">Bileta dhe pagesa elektronike</li>
+            </ul>
+          </article>
+          <article class="disc">
+            <h3 data-i18n="t4.t">Siguria rrugore</h3>
+            <p data-i18n="t4.d">Parandalimi është gjithmonë më i mirë se kurimi. Më pak viktima, kosto më të ulëta dhe qytete më të sigurta.</p>
+            <ul>
+              <li data-i18n="t4.l1">Plane dhe politika të sigurisë rrugore</li>
+              <li data-i18n="t4.l2">Auditim dhe rishikim i sigurisë</li>
+              <li data-i18n="t4.l3">Statistika dhe analiza të aksidenteve</li>
+              <li data-i18n="t4.l4">Vlerësim i ndikimit të masave</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARCHITECTURE & PROPERTY ============ -->
+    <section class="arch" id="arkitekture" aria-labelledby="arch-title">
+      <div class="wrap arch__wrap">
+        <div class="arch__text">
+          <h2 class="h-section" id="arch-title" data-i18n="arch.title">Arkitekturë &amp; prona</h2>
+          <p class="arch__lede" data-i18n="arch.lede">Çdo ndërtesë fillon me një parcelë të matur saktë. Nga fizibiliteti te leja e ndërtimit, e çojmë projektin nga toka te forma.</p>
+          <ul class="arch__list">
+            <li><strong data-i18n="a1.t">Studim fizibiliteti</strong><span data-i18n="a1.d">A mund të ndërtohet këtu, dhe sa? Kufizimet, vijat e ndërtimit dhe potenciali i parcelës.</span></li>
+            <li><strong data-i18n="a2.t">Projektim arkitektonik</strong><span data-i18n="a2.d">Nga koncepti te dokumentacioni për leje ndërtimi, mbi bazën e matjeve tona.</span></li>
+            <li><strong data-i18n="a3.t">Planifikim parcelash</strong><span data-i18n="a3.d">Ndarje dhe rregullim i parcelave për zhvillim banesor ose komercial.</span></li>
+            <li><strong data-i18n="a4.t">Dokumentim i objekteve</strong><span data-i18n="a4.d">Skanim 3D dhe matje as-built për rikonstruim, legalizim ose regjistrim.</span></li>
+            <li><strong data-i18n="a5.t">Vlerësime pronësore</strong><span data-i18n="a5.d">Të dhëna të matura për blerje, shitje, trashëgimi ose kredi.</span></li>
+          </ul>
+        </div>
+        <figure class="axo" id="axo">
+          <svg class="axo__svg" id="axoSvg" viewBox="0 0 720 640" role="img" aria-label="Ilustrim: nga parcela te ndërtesa" data-i18n-attr="aria-label:arch.aria"></svg>
+          <figcaption class="axo__cap" data-i18n="arch.cap">Ilustrim: parcela, vija e ndërtimit dhe vëllimi i lejuar.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="partners" id="partneret" aria-labelledby="partners-title">
+      <div class="wrap">
+        <div class="partners__head">
+          <h2 class="h-section" id="partners-title" data-i18n="partners.title">Partnerët</h2>
+          <p class="partners__lede" data-i18n="partners.lede">Punojmë me institucione publike dhe kompani që kërkojnë të dhëna të sakta, dhe me prodhuesit e teknologjisë që përdorim çdo ditë.</p>
+        </div>
+        <ul class="plist">
+          <li class="partner partner--ptv">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" /><circle cx="14" cy="14" r="4" /></svg></span>
+            <a class="partner__name" href="https://www.ptvgroup.com" target="_blank" rel="noopener">PTV Group</a>
+            <span class="partner__role" data-i18n="pa1.r">Partner teknologjik · distributor zyrtar për Kosovën</span>
+            <span class="partner__place">Karlsruhe, DE</span>
+          </li>
+          <li class="partner partner--ptv">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M14 3.5 24.5 22h-21Z" /><circle class="fill" cx="14" cy="15.5" r="2.4" /></svg></span>
+            <a class="partner__name" href="https://leica-geosystems.com" target="_blank" rel="noopener">Leica Geosystems</a>
+            <span class="partner__role" data-i18n="pa5.r">Partner teknologjik · furnizues i instrumenteve matëse · Hexagon AB</span>
+            <span class="partner__place">Heerbrugg, CH</span>
+          </li>
+          <li class="partner">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="10" /><path d="M14 2v24M2 14h24" /></svg></span>
+            <a class="partner__name" href="http://www.dwh-solution.com" target="_blank" rel="noopener">DWH Handel</a>
+            <span class="partner__role" data-i18n="pa6.r">Partner teknologjik · furnizim me instrumente Leica</span>
+            <span class="partner__place">Tiranë · Prishtinë</span>
+          </li>
+          <li class="partner">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><rect x="4" y="4" width="20" height="20" /><rect x="10" y="10" width="8" height="8" /></svg></span>
+            <span class="partner__name" data-i18n="pa2.n">Qeveria e Kosovës</span>
+            <span class="partner__role" data-i18n="pa2.r">Institucion publik</span>
+            <span class="partner__place">Prishtinë</span>
+          </li>
+          <li class="partner">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="11" /><circle class="fill" cx="14" cy="14" r="5" /></svg></span>
+            <span class="partner__name" data-i18n="pa3.n">Komuna e Prishtinës</span>
+            <span class="partner__role" data-i18n="pa3.r">Institucion publik</span>
+            <span class="partner__place">Prishtinë</span>
+          </li>
+          <li class="partner">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 22V10l10-6 10 6v12Z" /><path d="M10 22v-7h8v7" /></svg></span>
+            <a class="partner__name" href="https://albicommerce.com" target="_blank" rel="noopener">Albi Commerce</a>
+            <span class="partner__role" data-i18n="pa4.r">Sektori privat · distribucion</span>
+            <span class="partner__place">Veternik, Prishtinë</span>
+          </li>
+          <li class="partner">
+            <span class="partner__sym" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M5 24V8h18v16Z" /><path d="M5 8l18 16M23 8 5 24" /></svg></span>
+            <a class="partner__name" href="https://www.nartelexin.com" target="_blank" rel="noopener">Nartel EX-IN</a>
+            <span class="partner__role" data-i18n="pa7.r">Sektori privat · ndërtim</span>
+            <span class="partner__place">Prishtinë</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="wrap contact__wrap">
+        <div class="contact__side">
+          <h2 class="h-section" id="contact-title" data-i18n="contact.title">Porositni matjen</h2>
+          <p class="contact__lede" data-i18n="contact.lede">Na tregoni ku ndodhet prona dhe çfarë ju duhet. Ju kthejmë përgjigje me ofertë.</p>
+          <a class="contact__phone" href="tel:+38344239065">
+            <span class="contact__label" data-i18n="contact.call">Telefononi</span>
+            <span class="contact__num">+383 44 239 065</span>
+          </a>
+          <a class="contact__mail" href="mailto:muzafer.mustafa@geoinfo-ks.com">
+            <span class="contact__label">Email</span>
+            <span>muzafer.mustafa@geoinfo-ks.com</span>
+          </a>
+        </div>
+
+        <form class="order" id="orderForm" novalidate>
+          <div class="order__head" aria-hidden="true">
+            <span data-i18n="form.sheet">Fletëporosi</span>
+            <span id="orderNo">GI-2026-0001</span>
+          </div>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Emri dhe mbiemri</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required />
+            <p class="field__err" data-i18n="form.err.name">Shkruani emrin tuaj.</p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">Telefoni</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+383" />
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" />
+              <p class="field__err" data-i18n="form.err.contact">Na lini një telefon ose një email të vlefshëm.</p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-muni" data-i18n="form.muni">Komuna</label>
+              <select id="f-muni" name="municipality"></select>
+            </div>
+            <div class="field">
+              <label for="f-service" data-i18n="form.service">Shërbimi</label>
+              <select id="f-service" name="service"></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.msg">Përshkrimi</label>
+            <textarea id="f-msg" name="message" rows="4" data-i18n-attr="placeholder:form.msg.ph" placeholder="p.sh. matje kufitare për një parcelë në Fushë Kosovë, rreth 8 ari"></textarea>
+          </div>
+          <div class="order__foot">
+            <button class="btn btn--accent" type="submit"><span data-i18n="form.send">Dërgo kërkesën</span>
+              <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" /></svg>
+            </button>
+            <p class="order__note" data-i18n="form.note">Kërkesa hapet në aplikacionin tuaj të emailit, gati për t’u dërguar.</p>
+          </div>
+          <p class="order__status" id="orderStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER: SHEET IMPRINT ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__sign"><span data-i18n="footer.sign1">Vizion i qartë,</span> <span class="footer__brand">GeoInfo.</span></p>
+      <div class="footer__grid">
+        <nav class="footer__nav" aria-label="Fundi" data-i18n-attr="aria-label:footer.nav">
+          <a href="#sherbimet" data-i18n="nav.services">Shërbimet</a>
+          <a href="#procesi" data-i18n="nav.process">Si punojmë</a>
+          <a href="#trafiku" data-i18n="nav.traffic">Trafiku</a>
+          <a href="#arkitekture" data-i18n="nav.arch">Arkitekturë &amp; prona</a>
+          <a href="#partneret" data-i18n="nav.partners">Partnerët</a>
+          <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="footer__contact">
+          <a href="tel:+38344239065">+383 44 239 065</a>
+          <a href="mailto:muzafer.mustafa@geoinfo-ks.com">muzafer.mustafa@geoinfo-ks.com</a>
+        </div>
+        <dl class="footer__credits">
+          <div><dt data-i18n="credits.terrain">Terreni</dt><dd>SRTM (NASA/USGS), AWS Terrain Tiles</dd></div>
+          <div><dt data-i18n="credits.map">Hartografia</dt><dd>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, ODbL</dd></div>
+        </dl>
+      </div>
+      <div class="footer__base">
+        <span>© <span id="year">2026</span> GeoInfo Sh.P.K. <span data-i18n="footer.rights">Të gjitha të drejtat e rezervuara.</span></span>
+        <span class="footer__coord" aria-hidden="true">42°39′ N · 21°10′ E</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
