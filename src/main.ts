@@ -24,16 +24,25 @@ if (!reduced) {
 
 /* ---------------- top margin: condense, hide on scroll down ---------------- */
 const topbar = document.getElementById('topbar')!;
-let lastY = 0;
+// Smooth scrolling eases out in tiny steps, so the bar reacts to distance travelled in one
+// direction (hide after 64px down, show after 40px up), never to a single scroll event.
+let lastY = window.scrollY, travel = 0, hidden = false, ticking = false;
+const setHidden = (h: boolean) => { if (h !== hidden) { hidden = h; topbar.classList.toggle('is-hidden', h); } };
 const onScroll = () => {
-  const y = window.scrollY;
-  topbar.classList.toggle('is-scrolled', y > 8);
-  const menuOpen = document.body.classList.contains('menu-open');
-  topbar.classList.toggle('is-hidden', !menuOpen && y > window.innerHeight * 0.9 && y > lastY + 2);
-  if (y < lastY - 2) topbar.classList.remove('is-hidden');
+  ticking = false;
+  const y = window.scrollY, d = y - lastY;
   lastY = y;
+  topbar.classList.toggle('is-scrolled', y > 8);
+  if (document.body.classList.contains('menu-open') || y < window.innerHeight * 0.6) { travel = 0; setHidden(false); return; }
+  if (!d) return;
+  if (Math.sign(d) !== Math.sign(travel)) travel = 0;
+  travel += d;
+  if (travel > 64) setHidden(true);
+  else if (travel < -40) setHidden(false);
 };
-window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+// keyboard focus inside the bar always brings it back
+topbar.addEventListener('focusin', () => { travel = 0; setHidden(false); });
 
 /* ---------------- section spy for the index ---------------- */
 const spyLinks = [...document.querySelectorAll<HTMLAnchorElement>('[data-spy]')];
